@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ڈیجیٹل پروڈکٹس شاپ</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="navbar">
+    <h1 class="logo">📦 ڈیجیٹل پروڈکٹس شاپ</h1>
+    <nav>
+      <button id="loginBtn" class="btn primary">لاگ ان</button>
+      <button id="whatsappBtn" class="btn ghost">WhatsApp</button>
+    </nav>
+  </header>
+  <section id="loginSection" class="modal hidden">
+    <div class="modal-content">
+      <h2 id="authTitle">لاگ ان</h2>
+      <form id="authForm">
+        <label>ای میل:<input type="email" id="authEmail" required></label>
+        <label>پاس ورڈ:<input type="password" id="authPass" required></label>
+        <button type="submit" id="authSubmit" class="btn primary">لاگ ان</button>
+        <button type="button" id="switchMode" class="btn ghost">رجسٹر کریں</button>
+        <p id="authMsg" class="msg"></p>
+      </form>
+    </div>
+  </section>
+  <main id="dashboard" class="hidden">
+    <h2>پروڈکٹس مینیج کریں</h2>
+    <button id="addProductBtn" class="btn success">نیا پروڈکٹ شامل کریں</button>
+    <div id="productForm" class="form hidden">
+      <h3>پروڈکٹ کی تفصیلات</h3>
+      <form id="frmProduct">
+        <input type="text" id="pTitle" placeholder="پروڈکٹ کا نام" required>
+        <input type="number" id="pPrice" placeholder="قیمت" required>
+        <textarea id="pDesc" placeholder="تفصیل"></textarea>
+        <input type="url" id="pImage" placeholder="امیج کا لنک">
+        <button type="submit" class="btn success">محفوظ کریں</button>
+        <button type="button" id="cancelProduct" class="btn danger">منسوخ کریں</button>
+      </form>
+    </div>
+    <div id="productsList" class="grid"></div>
+  </main>
+  <section id="store">
+    <h2>اسٹور</h2>
+    <div id="publicProducts" class="grid"></div>
+  </section>
+  <footer class="footer">
+    <p>© <span id="year"></span> ڈیجیٹل پروڈکٹس شاپ — All Rights Reserved.</p>
+  </footer>
+  <script src="js/app.js"></script>
+</body>
+</html>
