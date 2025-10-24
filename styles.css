@@ -1,0 +1,21 @@
+:root {
+  --bg: #0e1422;
+  --card: #121a2b;
+  --text: #f0f4fa;
+  --muted: #9ca3af;
+  --accent: #06b6d4;
+  --accent2: #7c3aed;
+  --success: #22c55e;
+  --danger: #ef4444;
+}
+body { background: var(--bg); color: var(--text); font-family: "Noto Sans Arabic", sans-serif; }
+.navbar { display:flex; justify-content:space-between; align-items:center; padding:15px 20px; background:#131b30; }
+.btn { border:none; padding:8px 14px; border-radius:8px; cursor:pointer; }
+.btn.primary { background:linear-gradient(90deg, var(--accent), var(--accent2)); color:#fff; }
+.btn.ghost { border:1px solid rgba(255,255,255,0.3); background:transparent; color:#fff; }
+.btn.success { background:linear-gradient(90deg,#16a34a,#22c55e); color:#fff; }
+.btn.danger { background:linear-gradient(90deg,#dc2626,#ef4444); color:#fff; }
+.hidden { display:none; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:16px; margin-top:20px; }
+.product-card { background:var(--card); padding:10px; border-radius:10px; }
+.footer { text-align:center; padding:15px; color:var(--muted); font-size:0.9rem; border-top:1px solid rgba(255,255,255,0.1); }
